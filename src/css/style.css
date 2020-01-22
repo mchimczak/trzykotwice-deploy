@@ -305,7 +305,7 @@ h4 span strong {
     background-image: url('../img/svg/mail2.svg');
 }
 .contact__block_icon.location {
-    background-image: url('../img/svg/location.svg');
+    background-image: url('../img/svg/location2.png');
 }
 .contact__section::after {
     content: '';
