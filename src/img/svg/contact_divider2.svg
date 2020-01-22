@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="385.45251mm"
+   height="35.53857mm"
+   viewBox="0 0 385.45252 35.53857"
+   version="1.1"
+   id="svg844"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="contact_divider2.svg">
+  <defs
+     id="defs838" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="316.60955"
+     inkscape:cy="-15.036891"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1822"
+     inkscape:window-height="1051"
+     inkscape:window-x="2489"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false"
+     inkscape:showpageshadow="false"
+     borderlayer="false" />
+  <metadata
+     id="metadata841">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(58.069771,-296.80508)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#184561;fill-opacity:1;stroke:none;stroke-width:0.18218793;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="path827"
+       d="m -58.069771,332.34365 v -35.53857 h 10.707022 c 10.707042,0 32.121027,0 53.5350245,0 21.4139755,0 42.8282925,0 64.2420335,0 21.414176,0 42.828171,0 64.242191,0 21.41402,0 42.82815,0 64.24212,0 21.41398,0 42.828,0 64.24212,0 21.41397,0 42.82796,0 53.53498,0 h 10.70701 v 0 l -10.70701,4.60278 c -10.70702,4.65207 -32.12101,13.7835 -53.53498,15.7949 -21.41412,1.93734 -42.82814,-3.24536 -64.24212,-3.94872 -21.41397,-0.65404 -42.8281,3.29471 -64.24212,7.24343 -21.41402,3.94872 -42.828015,7.89746 -64.242191,5.26908 -21.413741,-2.67766 -42.828058,-11.80915 -64.2420335,-11.84621 -21.4139975,0.0372 -42.8279825,9.16855 -53.5350245,13.8206 z" />
+  </g>
+</svg>

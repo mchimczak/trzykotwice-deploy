@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Przychodnia Trzy Kotwice</title>
+</head>
+<body>
+    <!-- <div class="navbar-fixed"> -->
+        <nav>
+            <div class="nav-wrapper">
+                <div class="brand-logo left"></div>
+                <span class="nav__title">Przychodnia Trzy Kotwice</span>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#start" class="sidenav-close nav__link">Strona główna</a></li>
+                    <li><a href="#o-nas" class="sidenav-close nav__link">O Nas</a></li>
+                    <li><a href="#zespół" class="sidenav-close nav__link">Zespół</a></li>
+                    <li><a href="#oferta" class="sidenav-close nav__link">Oferta</a></li>
+                    <li><a href="#dla-pacjentów" class="sidenav-close nav__link">Dla pacjentów</a></li>
+                    <li><a href="#faq" class="sidenav-close nav__link">FAQ</a></li>
+                </ul>
+            </div>
+          </nav>
+    <!-- </div> -->
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><div class="sidenav__logo"></div></li>
+        <li><a href="#start" class="sidenav-close">Strona główna</a></li>
+        <li><a href="#o-nas" class="sidenav-close">O Nas</a></li>
+        <li><a href="#zespół" class="sidenav-close">Zespół</a></li>
+        <li><a href="#oferta" class="sidenav-close">Oferta</a></li>
+        <li><a href="#dla-pacjentów" class="sidenav-close">Dla pacjentów</a></li>
+        <li><a href="#faq" class="sidenav-close">FAQ</a></li>
+      </ul>
+
+      <main>
+          <section class="hero__section">
+                <div class="section__anchor" id="start"></div>
+              <div class="hero__img"></div>
+              <div class="hero__content__wrapper container">
+                  <div class="hero__content container">
+                    <p>Satysfakcja pacjenta- <span>naszą satysfakcją!</span></p>
+                  </div>
+                  <button class="hero__btn btn"><a href="#o-nas">Poznajmy się!</a></button>
+              </div>
+          </section>
+          <section class="contact__section" id="">
+              <div class="container center">
+                  <h4>Niepubliczny zakład opieki zdrowotnej <span><strong>"Przychodnia - Trzy Kotwice"</strong></span> </h4>
+                  <div class="map"></div>
+                  <div class="contact__content_wrapper">
+                      <div class="contact__hours">
+                          <h5>Godziny otwarcia</h5>
+                          <ul>
+                              <li class="contact__list"><span>Poniedziałek &ensp;</span><span>8.30 - 17.30</span></li class="contact__list">
+                              <li class="contact__list"><span>Wtorek</span><span>8.30 - 17.30</span></li>
+                              <li class="contact__list"><span>Środa</span><span>8.30 - 17.30</span></li>
+                              <li class="contact__list"><span>Czwartek</span><span>8.30 - 17.30</span></li>
+                              <li class="contact__list"><span>Piątek</span><span>8.30 - 17.30</span></li>
+                              <li class="contact__list"><span>Sobota</span><span>Zamknięte</span></li>
+                              <li class="contact__list"><span>Niedziela</span><span>Zamknięte</span></li>
+                          </ul>
+                      </div>
+                      <div class="contact__info">
+                          <div>
+                              <h5>Kontakt</h5>
+                              <div class="contact__block">
+                                <div class="contact__block_icon phone"></div>
+                                <div class="contact__block_content">
+                                    <p><a href="tel:+48774444903">77 4444 903</a></p>
+                                </div>
+                              </div>
+                              <div class="contact__block">
+                                  <div class="contact__block_icon mail"></div>
+                                  <div class="contact__block_content">
+                                      <p>poczta@przychodnia-trzykotwice.pl</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <h5>Lokalizacja</h5>
+                              <div class="contact__block">
+                                  <div class="contact__block_icon location"></div>
+                                  <div class="contact__block_content">
+                                    <p>ul. Trzech Kotwic 6</p>
+                                    <p>49-300 Brzeg</p>
+                                  </div>
+                              </div>
+                                  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="about__section">
+                <div class="section__anchor" id="o-nas"></div>
+              <div class="container">
+                  <h1>O Nas...</h1>
+              </div>
+              <div class="section__img"></div>
+              <div class="about__bg">
+                  <div class="container">
+                    <p>Jesteśmy placówką medyczną, realizującą świadczenia z zakresu podstawowej opieki zdrowotnej (POZ). Zakład rozpoczął działalność w październiku 1999r.</p>
+                    <p>Celem poprawy komfortu i bezpieczeństwa korzystania ze świadczeń wykonano szereg modernizacji i rozbudowy, dzięki którym zakład zyskał nowe skrzydło, a budynek został całkowicie dostosowany do obsługi pacjenta z
+                    dysfunkcją narządu ruchu i niepełnosprawnego (parking, podjazdy dla wózków,
+                    pochylnie dla pieszych, urządzenie dźwigowo – transportowe, toalety dla
+                    niepełnosprawnych).</p>
+                        <div class="about grid-wrapper">
+                          <h4 class="about grid-header">Dlaczego właśnie my?</h4>
+                          <div class="about svg"></div>
+                          <div class="grid_box_wrapper">
+                              <div class="about__box">
+                                  <div class="tick"></div>
+                                  <p>Ponad 20 lat na rynku</p>
+                              </div>
+                              <div class="about__box">
+                                  <div class="tick"></div>
+                                  <p>20 doświadczonych specjalistów </p>
+                              </div>
+                              <div class="about__box">
+                                  <div class="tick"></div>
+                                  <p>Zaufało nam już ponad 11 tysięcy pacjentów</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </section>
+          <section class="team__section">
+              <div class="section__anchor" id="zespół"></div>
+                <div class="container">
+                        <h1>zespół</h1>
+                </div>
+                <!-- card version -->
+                <div class="team__section_cards container">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Aleksander Szpak</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p><b>Kierownik zakładu</b></p>
+                                    <p>Aleksander Szpak</p>
+                                    <p>lekarz specjalista chorób wewnętrznych</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Ewa Tuła - Granat</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p><b>Zastępca kierownika zakładu</b></p>
+                                    <p>Ewa Tuła - Granat</p>
+                                    <p>Lekarz pediatra</p>
+                                    <p>Specjalista medycyny rodzinnej</p>
+                                    <p>tel. 77 4444 763</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Piotr Bednarz</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Piotr Bednarz</p>
+                                    <p>Lekarz chorób wewnętrznych</p>
+                                    <p>Specjalista medycyny rodzinnej</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Elżbieta Fijałkowska - Huczyńska</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Elżbieta Fijałkowska - Huczyńska</p>
+                                    <p>lekarz pediatra</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Joanna Bogacka</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Joanna Bogacka</p>
+                                    <p>lekarz chorób wewnętrznych</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Grażyna Husar</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Grażyna Husar</p>
+                                    <p>lekarz chorób wewnętrznych</p>
+                                    <p>Specjalista medycyny pracy</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Aldona Adamczyk - Krawiec</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Aldona Adamczyk - Krawiec</p>
+                                    <p>lekarz specjalista pediatrii</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Elżbieta Pilewska</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Elżbieta Pilewska</p>
+                                    <p>lekarz specjalista pediatrii</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="./img/doc1.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">lek.med. Marek Szpak</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Marek Szpak</p>
+                                    <p>lekarz rezydent w trakcie specjalizacji z chorób wewnętrznych</p>
+                                </div>
+                            </div>
+                          </div>
+                          <button class="team__cta btn"><a href="#oferta">Sprawdź naszą ofertę</a></button>
+                </div>
+          </section>
+
+          <section class="info__section">
+              <div class="section__img"></div>
+                  <div class="info__section_content container">
+                      <div class="info__section_block">
+                          <h4>Stany nagłe</h4>
+                          <p>Grupa objawów klinicznych i stanów chorobowych, wymagających
+                            NATYCHMIASTOWEJ interwencji medycznej, gdyż jej nieudzielenie
+                            zagraża zdrowiu i życiu pacjenta.
+                            </p>
+                            <p>Pacjent lub Jego opiekunowie powinni przy rejestracji zgłosić fakt
+                            występowania objawów alarmowych.
+                            W warunkach domowych wystąpienie tych objawów jest
+                            BEZWZGLĘDNYM WSKAZANIEM do wezwania POGOTOWIA
+                            RATUNKOWEGO ( tel 999 lub 112 ).</p> 
+                      </div>
+                      <div class="info__section_block">
+                          <p>Oczekiwanie na wizytę domową lekarza pierwszego kontaktu u pacjenta
+                            w stanie nagłym zagraża Jego zdrowiu i życiu oraz opóźnia udzielenie
+                            wykwalifikowanej pomocy!
+                            </p>
+                      </div>
+                  </div>
+          </section>
+
+          <section class="offer__section">
+              <div>
+                <div class="section__anchor" id="oferta"></div>
+                <div class="container">
+                    <h1>oferta</h1>
+                    <div class="offer section__block">
+                        <p>Poniżej przedstawiamy listę usług podstawowej opieki zdrowotnej świadczonych w naszej placówce.</p>
+                        <p>Więcej informacji znajdą Państwo w zakładce <a href="#dla-pacjentów" class="link">DLA PACJENTÓW</a>.</p>
+                    </div>
+                </div>
+
+            <!-- slideshow offer  -->
+            <div class="offer__section_slider slider">
+                <ul class="slides">
+                    <li>
+                        <img src="./img/oferta_galeria/offer1.jpg">
+                        <div class="caption left-align">
+                            <h3>Opieka w wieku rozwojowym</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/oferta_galeria/box2.jpg">
+                        <div class="caption right-align">
+                            <h3>Usługi diagostyczne</h3>
+                            <h5 class="light grey-text text-lighten-3">EKG, spirometria, USG, wodorowe testy oddechowe</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/oferta_galeria/offer3.jpg">
+                        <div class="caption left-align">
+                            <h3>Diagnostyka i terapia schorzeń</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/oferta_galeria/offer4.png">
+                        <div class="caption right-align">
+                            <h3>Profilaktyka  i promocja  zdrowia</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/oferta_galeria/box5.jpg">
+                        <div class="caption left-align">
+                            <h3>Szczepienia profilaktyczne</h3>
+                            <h5>Dzieci, młodzieży i dorosłych</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/oferta_galeria/offer6.jpg">
+                        <div class="caption right-align">
+                            <h3>Labolatorium analityczne</h3>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+              </div>
+          </section>
+          
+          <section class="patients__section">
+                <div class="section__anchor" id="dla-pacjentów"></div>
+              <div class="container">
+                  <h1>dla pacjentów</h1>
+                    <div class="patients contact__block">
+                      <p>W celu usprawnienia świadczonych przez nas usług, uprasza się o zapoznanie z poniższym dokumentem zawierającym istotne informacje dotyczące funkcjonownia naszej placówki - 
+                      <a href="./assets/wizyty.pdf" target="_blank">Kliknij tutaj!</a></p>
+                  </div>
+                    <div class="patients contact__block">
+                      <p>Pacjentów stosujących przewlekle leki prosimy, aby dla własnego
+                      bezpieczeństwa zgłaszali zapotrzebowanie na recepty kilka dni
+                      przed  wyczerpaniem zapasu leków!</p>
+                  </div>
+                    <div class="patients contact__block">
+                      <p>Ze względu na ramy czasowe wizyt nie jesteśmy w stanie załatwiać wielu
+                        spraw jednocześnie (na jednej wizycie). Z istotnym problemem zdrowotnym
+                        prosimy umawiać się na powtórną wizytę.</p>
+                  </div>
+                    <div class="patients contact__block">
+                      <p>Prosimy o informację telefoniczną w przypadku <b>rezygnacji</b> z ustalonej wizyty!</p>
+                  </div>
+              </div>
+                <div class="patients svg"></div>
+            </div>
+              <div class="section__content">
+                  <h4 class="container" id="patientsServicesHeader">Informacje o usługach</h4>
+                <ul class="collapsible container" id="patientsServicesContent">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Poradnie lekarza POZ</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p><b>Poniedziałek - Piątek</b></p>
+                                    <p>08.00 - 13.30</p>
+                                    <p>oraz</p>
+                                    <p>16.00 - 18.00 (porady ambulatoryjne)</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>Przerwa 10.00 - 10.30</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Wizyty domowe i patronażowe</b></p>
+                                    <p>13.30 - 15.30</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Punkt szczepień</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p>lek.med. Elżbieta Fijałowska - Huczyńska</p>
+                                    <p><b>Wtorek, Czwartek, Piątek</b></p>
+                                    <span>10.30 - 11.30</span>
+                                    <p><b>Środa</b></p>
+                                    <p>13.00 - 14.00</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>lek. med. Ewa Tuła - Granat</p>
+                                    <p><b>Wtorek, Piątek</b></p>
+                                    <p>12.00 - 13.00</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>lek. med. Elżbieta Pilewska</p>
+                                    <p><b>Poniedziałek</b></p>
+                                    <p>13.00 - 14.00</p>
+                                    <p><b>Wotrek, Środa</b></p>
+                                    <p>11.00 - 12.00</p>
+                                    <p><b>Piątek</b></p>
+                                    <p>11.00 - 12.00</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>lek. med. Aldona Adamczyk - Krawiec</p>
+                                    <p><b>Czwartek, Piątek</b></p>
+                                    <p>13.00 - 14.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Punkt pobrań</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p><b>I piętro, pok.6A, tel.77 4444 755</b></p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>Pobieranie materiału do badań diagnostycznych</p>
+                                    <p><b>Poniedziałek – Piątek</b></p>
+                                    <p>07.15 - 8.15</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Wtorek i Czwartek</b></p>
+                                    <p>Pacjenci na "krzywą cukrową" przyjmowani są w pierwszej kolejności.</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>Badania mikrobiologiczne (wymazy, posiewy) przyjmowane są
+                                    <b>od Poniedziałku do Czwartku.</b><span>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Skierowania od lekarza ważne są 2 tygodnie.</b></p>
+                                    <p>Skierowanie musi zawierać <b>PESEL pacjenta</b>.</p>
+                                    <p><b>Pacjent powinien być na czczo!</b></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Gabinet zabiegowy</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p>Zastrzyki, opatrunki, pomiary ciśnienia</p>
+                                    <p><b>Poniedziałek - Piątek</b></p>
+                                    <p>09.30 - 12.00 oraz 16.00 - 17.00</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>Przerwa na dezynfekcję i naświetlanie</p>
+                                    <p>12.30 - 16.00</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Wszelkie iniekcje (zastrzyki) dla pacjentów naszego zakładu wykonywane są wyłącznie na podstawie skierowania lekarskiego.</b></p>
+                                    <p><b>Skierowanie musi zawierać:</b></p>
+                                    <p>- PESEL pacjenta,</p>
+                                    <p>- dawkę leku, rozpuszczalnika i drogę podania,</p>
+                                    <p>- wyraźną pieczęć lekarza kierującego,</p>
+                                    <p>- wyraźną pieczęć zakładu kierującego, posiadającego umowę z NFZ.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Gabinet EKG i spirometrii</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p><b>I piętro, pok.6A, tel.77 4444 755</b></p>
+                                    <p>Wyłącznie na podstawie skierowania.</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Poniedziałek - Piątek</b></p>
+                                    <p>09.00 - 12.00 oraz 16.00 - 17.30</p>
+                                    <p>09.30 - 12.00 oraz 16.00 - 17.00</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>Przerwa na dezynfekcję i naświetlanie</p>
+                                    <p>12.30 - 16.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Pracownia USG</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p><b>parter cz.A, pok.2A</b></p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Poniedziałek - Piątek</b></p>
+                                    <p>08.00 - 9.30</p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p><b>Obowiązuje wcześniejsza rejestracja osobista lub telefoniczna(77 444903).</b></p>
+                                    <p>Badanie wykonywane na podstawie skierowania lekarza zakładu lub podmiotu współpracującego.</p>
+                                    <p>Do badania jamy brzusznej pacjent powinine być na czczo.</p>
+                                    <p>W dniu badania pacjent nie powinien palić papierosów.</p>
+                                    <p>W przypadku badania prostaty/pęcherza moczowego oddać mocz nocny i o godz. 06.00 wypić 1 i 1/2 szklanki płynu. Nie oddawać moczu do czasu badania.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Wodorowe testy oddechowe</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p>Wodorwe test oddechowe to nieinwazyjna metoda diagnostyczna, pomocna w diagnostyce takich stanów jak:</p>
+                                    <p>- zaburzenia wchłaniania/nietolerancji laktozy (produkty mleczne),</p>
+                                    <p>- zaburzenia wchłaniania/nietolerancji fruktozy (miód, owoce),</p>
+                                    <p>- zaburzenia wchłaniania/nietolerancji sorbitolu/ksylitolu (słodziki, produkty diabetyczne i bezcukrowe).</p>
+                                    <p><b>Test wykonywany jest bez konieczności skierowania lekarskiego.</b></p>
+                                    <p>WTO jest procedurą nieinwazyjną i trwa 120 min. (2 godziny)</p>
+                                    <p>Więcej informacji dotyczących przygotowania do testu znajdą Państwo <a href="./assets/WTO.pdf" target="_blank" class="link">TUTAJ</a>.</p>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <div class="patients__bg" id="patientsDivider"></div>
+                <h4 class="container" id="patientsInfoHeader">Informacje ogólne</h4>
+                <ul class="collapsible container" id="patientsInfoContent">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Dokumentacja medyczna</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p>Pacjent i ustanowiony przez Niego pełnomocnik mają prawo do uzyskiwania informacji na temat  stanu zdrowia oraz do wglądu do swojej dokumentacji medycznej, do sporządzania wypisów i kserokopii.</p>
+                                    <p><a href="./assets/dokumentacja_medyczna.pdf" class="link" target="_blank">Więcej informacji</a></p>
+                                    <p><a href="http://www.nfz.gov.pl/dla-pacjenta/prawa-pacjenta/" target="_blank" class="link">Prawa pacjenta</a></p>
+                                </div>
+                                <div class="collapsible__block">
+                                    <p>Dokumentację wydaje się/udostępnia do wglądu na pisemny wniosek pacjenta lub pełnomocnika zgodnie ze złożonym oświadczeniem* i wnioskiem**</p>
+                                    <p><a href="./assets/oswiadczenie.pdf" target="_blank" class="link">*Oświadczenie</a></p>
+                                    <p><a href="./assets/wniosek.pdf" target="_blank" class="link">**Wniosek</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add_circle</i>Karta Praw Pacjenta</div>
+                            <div class="collapsible-body">
+                                <div class="collapsible__block">
+                                    <p>Narodowy Fundusz  Zdrowia publikuje obowiązujące zasady praw  pacjenta w Zintegowanym Informatorze Pacjenta ABC.</p>
+                                    <p><a href="http://www.nfz.gov.pl/dla-pacjenta/prawa-pacjenta/" class="link" target="_blank" >Przejdź do strony NFZ</a></p>
+                                    <p><a href="./assets/prawa_pacjenta.pdf" target="_blank" class="link">Prawa Pacjenta</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/skargi.pdf" target="_blank">Skargi i wnioski</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/zasady_bezpiecznej_farmakoterapii.pdf" target="_blank">Zasady bezpiecznej farmakoterapii</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/farmakoterapia_przewlekla.pdf" target="_blank">Farmakoterapia przewlekła</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/recepty.pdf" target="_blank">Recepty</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/stany_nagle.pdf" target="_blank">Stany nagłe</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/szczepienia.pdf" target="_blank">Szczepienia ochronne</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/promocja_zdrowia.pdf" target="_blank">Profilaktyka i promocja zdrowia</a></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/swiateczna_pomoc.pdf" target="_blank">Nocna i świąteczna pomoc</a></div>
+                        </li>
+                </ul>
+              </div>
+          </section>
+          <section class="faq__section">
+                <div class="section__anchor" id="faq"></div>
+              <div class="container">
+                  <h1>FAQ- czyli najczęściej zadawane pytania</h1>
+                  <div class="faq__wrapper">
+                    <div class="faq__box">
+                        <div class="faq__box-header">
+                            <i class="material-icons">add_circle</i>
+                            <h5><a class="waves-effect waves-light btn modal-trigger" href="#faq1">Jak zapisać się do przychodni?</a></h5>
+                        </div>
+                        <div id="faq1" class="modal">
+                            <div class="modal-content">
+                            <h4>Jak zapisać się do przychodni?</h4>
+                            <p>Przyjęcie na listę pacjentów placówki następuje poprzez osobiste wypełnienie, podpisanie
+                                i złożenie w siedzibie świadczeniodawcy deklaracji wyboru lekarza POZ/pielęgniarki
+                                środowiskowej, określonej wzorem Narodowego Funduszu Zdrowia.</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect btn-flat"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="faq__box">
+                        <div class="faq__box-header">
+                            <i class="material-icons">add_circle</i>
+                            <h5> <a class="waves-effect waves-light btn modal-trigger" href="#faq2">Jak zarejstrować się na wizytę w placówce?</a></h5>
+                        </div>
+                          <div id="faq2" class="modal">
+                              <div class="modal-content">
+                              <h4>Jak zarejstrować się na wizytę w placówce?</h4>
+                              <p>Rejestracja telefoniczna pod numerem 77 44 44 903.
+                                <span>Od poniedziałku  do piątku  w godzinach od 08:30 do 17:30.</span></p>
+                              </div>
+                              <div class="modal-footer">
+                              <a href="#!" class="modal-close waves-effect btn-flat"><i class="material-icons">close</i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="faq__box">
+                        <div class="faq__box-header">
+                            <i class="material-icons">add_circle</i>
+                            <h5><a class="waves-effect waves-light btn modal-trigger" href="#faq3">Jak zarejstrować się na wizytę domową?</a></h5>
+                        </div>
+                        <div id="faq3" class="modal">
+                            <div class="modal-content">
+                            <h4>Jak zarejstrować się na wizytę domową?</h4>
+                            <p>Rejestracja odbywa się przez kontakt osobisty lub telefoniczny z lekarzem prowadzącym pacjenta. Na
+                                podstawie zebranego wywiadu lekarz kwalifikuje konieczność udzielenia porady w takiej
+                                formie i stopień jej pilności.</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect btn-flat"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="faq__box">
+                        <div class="faq__box-header">
+                            <i class="material-icons">add_circle</i>
+                            <h5><a class="waves-effect waves-light btn modal-trigger" href="#faq4">Jak i gdzie uzyskac pomoc w dni wolne i święta?</a></h5>
+                            </div>
+                            <div id="faq4" class="modal">
+                                <div class="modal-content">
+                                <h4>Jak i gdzie uzyskac pomoc w dni wolne i święta?</h4>
+                                <p>Po godzinie 18.00 do 8.00 rano dnia następnego (całodobowo w dni
+                                    ustawowo wolne od pracy) pacjent może skorzystać z opieki lekarskiej
+                                    i pielęgniarskiej w ramach nocnej i świątecznej opieki zdrowotnej.</p>
+                                    <p>Brzeg, ul. Mossora 6 (budynek przy bramie wjazdowej do szpitala).</p>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect btn-flat"><i class="material-icons">close</i></a>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="faq__box">
+                        <div class="faq__box-header">
+                            <i class="material-icons">add_circle</i>
+                            <h5> <a class="waves-effect waves-light btn modal-trigger" href="#faq5">Jak uzyskać recepty elektroniczne?</a></h5>
+                            </div>
+                            <div id="faq5" class="modal">
+                                <div class="modal-content">
+                                <h4>Jak uzyskać recepty elektroniczne?</h4>
+                                <p>Od 1 stycznia 2020 w zakładzie wystawiane są recepty elektroniczne(e-recepty).
+                                    Pacjent może je otrzymać jako:</p>
+                                    <span>SMS z kodem dostępowym do recepty na swój telefon</span>
+                                    <span>Plik na swój adres e-mail z możliwością wydruku</span>
+                                    <span>Wydruk z informacjami o kodzie dostępowym i dawkowaniu leków</span>
+                                    <p>Pierwsze 2 opcje możliwe są wyłącznie po zarejestrowaniu się i uaktywnieniu
+                                        swojego indywidualnego konta pacjenta ( IKP ) na stronie pacjent.gov.pl poprzez
+                                        Profil Zaufany lub e-dowód.</p>
+                                <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect btn-flat"><i class="material-icons">close</i></a>
+                                </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
+      <footer class="footer">
+          <h5>nzoz "przychodnia trzy kotwice"</h5>
+          <div class="footer__info container">
+              <div class="footer__block">
+                  <div class="footer__contact_wrapper">
+                      <p>ul.Trzech Kotwic 6</p>
+                      <p>49-300 Brzeg</p>
+                      <p>tel. 77 444 49 03</p>
+                      <p>e-mail trzykotwice@gmail.com</p>
+                      <p>NIP: 747 15 66 839</p>
+                      <p>REGON: 531405510</p>
+                  </div>
+              </div>
+              <div class="footer__block">
+                  <div class="footer__icon_wrapper">
+                    <div class="footer__icon">
+                          <img src="./img/svg/pdf.svg" alt="pdf-icon" class="footer__pdf_icon">
+                          <a href="./assets/rodo.pdf" target="_blank">Rodo</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>
