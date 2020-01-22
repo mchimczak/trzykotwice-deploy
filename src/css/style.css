@@ -394,7 +394,7 @@ section.team__section {
 }
 .team__section_cards .card {
     box-shadow: 0px 0px 0px 0 rgba(0,0,0,0.14), 0px 2px 3px 0px rgba(0,0,0,0.12), 0px 0px 0px 0px rgba(0,0,0,0.2);
-    border-radius: 25px;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
@@ -999,9 +999,6 @@ section.patients__section {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2em;
         width: 90%;
-    }
-    .team__section_cards .card {
-        border-radius: 5px;
     }
     .team__section_doctors {
         display: block;
