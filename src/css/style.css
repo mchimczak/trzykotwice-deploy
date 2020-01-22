@@ -567,7 +567,7 @@ section.patients__section {
 .faq__box {
     width: 100%;
     height: auto;
-    background-color: var(--secondary-bg-col);
+    background-color: #3a7092;
     color: var(--main-txt-col);
     border-radius: 15px 6px 15px 6px;
     padding: 1em;
@@ -576,7 +576,7 @@ section.patients__section {
     transition: .2s ease-in-out;
 }
 .faq__box:hover {
-    background-color: #053c57;
+    background-color: #336280;
     box-shadow: none;
 }
 .faq__box-header {
@@ -586,7 +586,7 @@ section.patients__section {
     color: var(--secondary-txt-col);
 }
 .faq__box .modal {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .faq__box h5 {
     font-family: inherit;
@@ -595,7 +595,7 @@ section.patients__section {
     margin: 0;
 }
 .faq__box h4 {
-    font-weight: bold;
+    font-weight: lighter;
 }
 .faq__box .modal-trigger {
     box-shadow: none;
@@ -607,7 +607,7 @@ section.patients__section {
     border-radius: 15px 6px 15px 6px;
 }
 .faq__box p {
-    margin: 1em auto 2em auto;
+    margin: 1em auto;
 }
 .faq__box span {
     display: block;
