@@ -22,6 +22,7 @@ import "../assets/swiateczna_pomoc.pdf";
 import '../css/style.css';
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('body').classList.add('disable-scroll');
     //sidenav
     var sidenav = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(sidenav, {
@@ -55,6 +56,25 @@ document.addEventListener('DOMContentLoaded', function() {
     var modal = document.querySelectorAll('.modal');
     var instances = M.Modal.init(modal, {});
 
+  });
+
+  const heroTitle = document.querySelector('.hero__content p');
+  const heroSubtitle = document.querySelector('.hero__content span');
+  const heroBtn = document.querySelector('.hero__btn');
+  const loader = document.querySelector('.loader__wrapper');
+  const borders = document.querySelectorAll('.hero__content-border');
+  
+  loader.addEventListener('transitionend', function() {
+      this.style.setProperty('display', 'none');
+      borders.forEach( x => x.classList.add('active'));
+      heroSubtitle.classList.add('show');
+      heroBtn.classList.add('show');
+  });
+  
+  window.addEventListener('load', () => {
+      document.querySelector('body').classList.remove('disable-scroll');
+      loader.style.setProperty('opacity', 0);
+      heroTitle.classList.add('show');
   });
 
 

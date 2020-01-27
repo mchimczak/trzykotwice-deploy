@@ -89,7 +89,7 @@ module.exports = (env) => {
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html",
-            favicon: "./src/img/favicon/favicon.ico",
+            favicon: "./src/favicon.ico",
             chunks: ['index']
         }),
         CSSExtract,

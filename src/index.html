@@ -4,17 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Świadczenia medyczne z zakresu podstawowej opieki zdrowotnej. Ponad dwudziestoletnia obecność na rynku. Wykwalifikowana kadra medyczna. Usługi laboratoryjne, USG, radiologia cyfrowa.">
     <!-- <meta name="format-detection" content="telephone=no"> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <title>Przychodnia Trzy Kotwice</title>
+    <style>body {font-family: 'Montserrat', sans-serif; } </style>
+    <style>
+        @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+    }
+    
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      font-feature-settings: 'liga';
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+        </style>
+     <style>
+        /* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz8vZwnCo.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz_PZw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    </style>
+    <style>
+        /* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqhPAMif.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPAA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    </style>
 </head>
 <body>
     <!-- <div class="navbar-fixed"> -->
@@ -45,30 +165,36 @@
         <li><a href="#faq" class="sidenav-close">FAQ</a></li>
       </ul>
 
+    <div class="loader__wrapper">
+        <div class="loader"></div>
+    </div>
+
       <main>
           <section class="hero__section">
                 <div class="section__anchor" id="start"></div>
               <div class="hero__img"></div>
               <div class="hero__content__wrapper container">
                   <div class="hero__content container">
-                    <p>Satysfakcja pacjenta- <span>naszą satysfakcją!</span></p>
+                    <div class="hero__content-border left"></div>
+                    <div class="hero__content-border right"></div>
+                    <p>Satysfakcja pacjenta<span>naszą satysfakcją!</span></p>
                   </div>
                   <button class="hero__btn btn"><a href="#o-nas">Poznajmy się!</a></button>
               </div>
           </section>
           <section class="contact__section" id="">
               <div class="container center">
-                  <h4>Niepubliczny zakład opieki zdrowotnej <span><strong>"Przychodnia - Trzy Kotwice"</strong></span> </h4>
+                  <h4>Niepubliczny Zakład Opieki Zdrowotnej <span><strong>"Przychodnia - Trzy Kotwice"</strong></span> </h4>
                   <div class="map"></div>
                   <div class="contact__content_wrapper">
                       <div class="contact__hours">
                           <h5>Godziny otwarcia</h5>
                           <ul>
-                              <li class="contact__list"><span>Poniedziałek &ensp;</span><span>8.30 - 17.30</span></li class="contact__list">
-                              <li class="contact__list"><span>Wtorek</span><span>8.30 - 17.30</span></li>
-                              <li class="contact__list"><span>Środa</span><span>8.30 - 17.30</span></li>
-                              <li class="contact__list"><span>Czwartek</span><span>8.30 - 17.30</span></li>
-                              <li class="contact__list"><span>Piątek</span><span>8.30 - 17.30</span></li>
+                              <li class="contact__list"><span>Poniedziałek &ensp;</span><span>7.30 - 18.00</span></li class="contact__list">
+                              <li class="contact__list"><span>Wtorek</span><span>7.30 - 18.00</span></li>
+                              <li class="contact__list"><span>Środa</span><span>7.30 - 18.00</span></li>
+                              <li class="contact__list"><span>Czwartek</span><span>7.30 - 18.00</span></li>
+                              <li class="contact__list"><span>Piątek</span><span>7.30 - 18.00</span></li>
                               <li class="contact__list"><span>Sobota</span><span>Zamknięte</span></li>
                               <li class="contact__list"><span>Niedziela</span><span>Zamknięte</span></li>
                           </ul>
@@ -85,7 +211,7 @@
                               <div class="contact__block">
                                   <div class="contact__block_icon mail"></div>
                                   <div class="contact__block_content">
-                                      <p>poczta@przychodnia-trzykotwice.pl</p>
+                                      <p>poczta.trzykotwice@gmail.com</p>
                                   </div>
                               </div>
                           </div>
@@ -127,7 +253,7 @@
                               </div>
                               <div class="about__box">
                                   <div class="tick"></div>
-                                  <p>20 doświadczonych specjalistów </p>
+                                  <p>Doświadczeni specjaliści</p>
                               </div>
                               <div class="about__box">
                                   <div class="tick"></div>
@@ -148,7 +274,7 @@
                 <div class="team__section_cards container">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="img/doc1.png">
+                              <img class="activator drASZ" src="img/drASZ.png" alt="Aleksander Szpak">
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Aleksander Szpak</span>
@@ -166,7 +292,7 @@
                           </div>
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                              <img class="activator drEG" src="./img/drEG.png" alt="Ewa Granat">
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Ewa Tuła - Granat</span>
@@ -185,7 +311,7 @@
                           </div>
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                              <img class="activator drPB" src="./img/drPB.png" alt="Piotr Bednarz">
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Piotr Bednarz</span>
@@ -197,13 +323,13 @@
                                     <p>Piotr Bednarz</p>
                                     <p>Lekarz chorób wewnętrznych</p>
                                     <p>Specjalista medycyny rodzinnej</p>
-                                    <p>tel. 77 4444 707</p>
+                                    <p>tel. 77 4444 712</p>
                                 </div>
                             </div>
                           </div>
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator " src="./img/svg/f_avatar.svg" alt="doctor"> -->
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Elżbieta Fijałkowska - Huczyńska</span>
@@ -214,13 +340,13 @@
                                 <div class="content">
                                     <p>Elżbieta Fijałkowska - Huczyńska</p>
                                     <p>lekarz pediatra</p>
-                                    <p>tel. 77 4444 707</p>
+                                    <p>tel. 77 4444 765</p>
                                 </div>
                             </div>
                           </div>
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Joanna Bogacka</span>
@@ -231,13 +357,13 @@
                                 <div class="content">
                                     <p>Joanna Bogacka</p>
                                     <p>lekarz chorób wewnętrznych</p>
-                                    <p>tel. 77 4444 707</p>
+                                    <p>tel. 77 4444 703</p>
                                 </div>
                             </div>
                           </div>
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Grażyna Husar</span>
@@ -249,13 +375,13 @@
                                     <p>Grażyna Husar</p>
                                     <p>lekarz chorób wewnętrznych</p>
                                     <p>Specjalista medycyny pracy</p>
-                                    <p>tel. 77 4444 707</p>
+                                    <p>tel. 77 4444 727</p>
                                 </div>
                             </div>
                           </div>
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Aldona Adamczyk - Krawiec</span>
@@ -266,13 +392,13 @@
                                 <div class="content">
                                     <p>Aldona Adamczyk - Krawiec</p>
                                     <p>lekarz specjalista pediatrii</p>
-                                    <p>tel. 77 4444 707</p>
+                                    <p>tel. 77 4444 727</p>
                                 </div>
                             </div>
                           </div>
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Elżbieta Pilewska</span>
@@ -283,12 +409,13 @@
                                 <div class="content">
                                     <p>Elżbieta Pilewska</p>
                                     <p>lekarz specjalista pediatrii</p>
+                                    <p>tel. 77 4444 765</p>
                                 </div>
                             </div>
                           </div>
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="./img/doc1.png">
+                            <div class="card-image waves-effect waves-block waves-light male avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
                             </div>
                             <div class="card-content">
                               <span class="card-title activator">lek.med. Marek Szpak</span>
@@ -299,6 +426,45 @@
                                 <div class="content">
                                     <p>Marek Szpak</p>
                                     <p>lekarz rezydent w trakcie specjalizacji z chorób wewnętrznych</p>
+                                    <p>tel. 77 4444 707</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">Pielęgniarki praktyki</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Danuta Ciecierska</p>
+                                    <p>mgr Agata Gołąbek</p>
+                                    <p>Elżbieta Dolińska</p>
+                                    <p>Justyna Kendzierska</p>
+                                    <p>mgr Małgorzata Fudali</p>
+                                    <p>Jowita Czaplejewicz</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light fem avatar">
+                              <!-- <img class="activator" src="./img/doc1.png" alt="doctor"> -->
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator">Pielęgniarki środowiskowo - rodzinne</span>
+                            <button class="btn center activator">Więcej</button>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div class="content">
+                                    <p>Zofia Krzyśków</p>
+                                    <p>mgr Paulina Krajewska</p>
+                                    <p>Danuta Majewska</p>
+                                    <p>Renata Czajka</p>
                                 </div>
                             </div>
                           </div>
@@ -345,41 +511,41 @@
             <div class="offer__section_slider slider">
                 <ul class="slides">
                     <li>
-                        <img src="./img/oferta_galeria/offer1.jpg">
+                        <img src="./img/oferta_galeria/offer1.jpg" alt="Opieka w wieku rozwojowym">
                         <div class="caption left-align">
                             <h3>Opieka w wieku rozwojowym</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="./img/oferta_galeria/box2.jpg">
+                        <img src="./img/oferta_galeria/box2.jpg" alt="Usługi diagnostyczne">
                         <div class="caption right-align">
                             <h3>Usługi diagostyczne</h3>
-                            <h5 class="light grey-text text-lighten-3">EKG, spirometria, USG, wodorowe testy oddechowe</h5>
+                            <h5 class="light grey-text text-lighten-3">EKG, rentgen cyforwy, spirometria, USG, wodorowe testy oddechowe</h5>
                         </div>
                     </li>
                     <li>
-                        <img src="./img/oferta_galeria/offer3.jpg">
+                        <img src="./img/oferta_galeria/offer3.jpg" alt="Diagnostyka i terapia schorzeń">
                         <div class="caption left-align">
                             <h3>Diagnostyka i terapia schorzeń</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="./img/oferta_galeria/offer4.png">
+                        <img src="./img/oferta_galeria/offer4.png" alt="Profilaktyka i promocja zdrowia">
                         <div class="caption right-align">
                             <h3>Profilaktyka  i promocja  zdrowia</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="./img/oferta_galeria/box5.jpg">
+                        <img src="./img/oferta_galeria/box5.jpg" alt="Szczepienia profilaktyczne">
                         <div class="caption left-align">
                             <h3>Szczepienia profilaktyczne</h3>
-                            <h5>Dzieci, młodzieży i dorosłych</h5>
+                            <h5 class="light grey-text text-lighten-3">Dzieci, młodzieży i dorosłych</h5>
                         </div>
                     </li>
                     <li>
-                        <img src="./img/oferta_galeria/offer6.jpg">
+                        <img src="./img/oferta_galeria/offer6.jpg" alt="Diagnostyka laboratoryjna">
                         <div class="caption right-align">
-                            <h3>Labolatorium analityczne</h3>
+                            <h3>Diagnostyka laboratoryjna</h3>
                         </div>
                     </li>
                 </ul>
@@ -572,7 +738,7 @@
                                 <div class="collapsible__block">
                                     <p>Pacjent i ustanowiony przez Niego pełnomocnik mają prawo do uzyskiwania informacji na temat  stanu zdrowia oraz do wglądu do swojej dokumentacji medycznej, do sporządzania wypisów i kserokopii.</p>
                                     <p><a href="./assets/dokumentacja_medyczna.pdf" class="link" target="_blank">Więcej informacji</a></p>
-                                    <p><a href="http://www.nfz.gov.pl/dla-pacjenta/prawa-pacjenta/" target="_blank" class="link">Prawa pacjenta</a></p>
+                                    <p><a href="http://www.nfz.gov.pl/dla-pacjenta/prawa-pacjenta/" target="_blank" rel="noreferrer" class="link">Prawa pacjenta</a></p>
                                 </div>
                                 <div class="collapsible__block">
                                     <p>Dokumentację wydaje się/udostępnia do wglądu na pisemny wniosek pacjenta lub pełnomocnika zgodnie ze złożonym oświadczeniem* i wnioskiem**</p>
@@ -586,7 +752,7 @@
                             <div class="collapsible-body">
                                 <div class="collapsible__block">
                                     <p>Narodowy Fundusz  Zdrowia publikuje obowiązujące zasady praw  pacjenta w Zintegowanym Informatorze Pacjenta ABC.</p>
-                                    <p><a href="http://www.nfz.gov.pl/dla-pacjenta/prawa-pacjenta/" class="link" target="_blank" >Przejdź do strony NFZ</a></p>
+                                    <p><a href="http://www.nfz.gov.pl/dla-pacjenta/prawa-pacjenta/" class="link" target="_blank" rel="noreferrer">Przejdź do strony NFZ</a></p>
                                     <p><a href="./assets/prawa_pacjenta.pdf" target="_blank" class="link">Prawa Pacjenta</a></p>
                                 </div>
                             </div>
@@ -596,9 +762,6 @@
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/zasady_bezpiecznej_farmakoterapii.pdf" target="_blank">Zasady bezpiecznej farmakoterapii</a></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/farmakoterapia_przewlekla.pdf" target="_blank">Farmakoterapia przewlekła</a></div>
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons">insert_drive_file</i><a href="./assets/recepty.pdf" target="_blank">Recepty</a></div>
@@ -634,7 +797,7 @@
                             <p>Przyjęcie na listę pacjentów placówki następuje poprzez osobiste wypełnienie, podpisanie
                                 i złożenie w siedzibie świadczeniodawcy deklaracji wyboru lekarza POZ/pielęgniarki
                                 środowiskowej, określonej wzorem* Narodowego Funduszu Zdrowia.</p>
-                            <p><a class="link" href="http://www.nfz.gov.pl/dla-pacjenta/informacje-o-swiadczeniach/podstawowa-opieka-zdrowotna/" target="_blank">*Zobacz wzór</a></p>
+                            <p><a class="link" href="http://www.nfz.gov.pl/dla-pacjenta/informacje-o-swiadczeniach/podstawowa-opieka-zdrowotna/" target="_blank" rel="noreferrer">*Zobacz wzór</a></p>
                             </div>
                             <div class="modal-footer">
                             <a href="#!" class="modal-close waves-effect btn-flat"><i class="material-icons">close</i></a>
@@ -725,9 +888,29 @@
                       <p>ul.Trzech Kotwic 6</p>
                       <p>49-300 Brzeg</p>
                       <p>tel. 77 444 49 03</p>
-                      <p>e-mail trzykotwice@gmail.com</p>
+                      <p>e-mail poczta.trzykotwice@gmail.com</p>
                       <p>NIP: 747 15 66 839</p>
                       <p>REGON: 531405510</p>
+                  </div>
+              </div>
+              <div class="footer__block">
+                  <div class="footer__contact_wrapper">
+                      <p>Filia</p>
+                      <p>Łukowice Brzeskie 88</p>
+                      <p>tel. 77 415 61 66</p>
+                      <p>Godziny otwarcia</p>
+                      <p>Wtorek 14.00 - 18.00</p>
+                      <p>Piątek 07.00 - 11.00</p>
+                  </div>
+              </div>
+              <div class="footer__block">
+                  <div class="footer__contact_wrapper">
+                      <p>Filia</p>
+                      <p>Jankowice Wielkie 56</p>
+                      <p>tel. 506 913 380</p>
+                      <p>Godziny otwarcia</p>
+                      <p>Wtorek 08.00 - 15.00</p>
+                      <p>Czwartek 14.30 - 18.00</p>
                   </div>
               </div>
               <div class="footer__block">
