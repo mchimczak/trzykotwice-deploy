@@ -1,11 +1,4 @@
 // import '../img/doctors.png';
-// import '../img/oferta_galeria/offer1.jpg';
-// import '../img/oferta_galeria/box1.jpg';
-// import '../img/oferta_galeria/box2.jpg';
-// import '../img/oferta_galeria/offer3.jpg';
-// import '../img/oferta_galeria/offer4.png';
-// import '../img/oferta_galeria/box5.jpg';
-// import '../img/oferta_galeria/offer6.jpg';
 import '../img/oferta_galeria/s1.jpg';
 import '../img/oferta_galeria/s2.jpg';
 import '../img/oferta_galeria/s3.jpg';

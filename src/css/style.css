@@ -1203,6 +1203,7 @@ section.patients__section {
     /* OFFER SECTION  */
     .offer__section .slider {
         height: 600px;
+        width: 100%;
         overflow: visible;
     }
 
@@ -1349,6 +1350,9 @@ section.patients__section {
 
 
     /* TEAM SECTION  */
+    section.team__section {
+        overflow: visible;
+    }
     .team__section_cards {
         grid-template-columns: repeat(3, 1fr);
         width: 70%;
@@ -1409,7 +1413,7 @@ section.patients__section {
         box-shadow: none;
     }
     .team__cta.btn {
-        display: block;
+        /* display: block; */
         margin: 6em auto .3em auto;
         background-color: var(--secondary-bg-col);
         width: auto;
@@ -1428,7 +1432,7 @@ section.patients__section {
 
 
     /* INFO SECTION  */
-    .info__section {
+    /* .info__section {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -1452,13 +1456,10 @@ section.patients__section {
         width: 50%;
         color: var(--secondary-txt-col);
         padding: 4em;
-    }
+    } */
 
     /* OFFER SECTION  */
-    .offer__section_slider {
-        width: 70%;
-        margin: 0 auto;
-    }
+
 
     /* PATIENTS SECTION  */
     .patients.contact__block {
