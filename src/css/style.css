@@ -475,7 +475,8 @@ background: linear-gradient(180deg, rgba(249,249,249,1) 34%, rgba(230,230,230,0.
 /* TEAM SECTION  */
 section.team__section {
     margin-top: -33px;
-    background-image: linear-gradient(to top, #f9f9f9, #295674, #184561);
+    /* background-image: linear-gradient(to top, #f9f9f9, #295674, #184561); */
+    background-image: linear-gradient(to bottom, #184561, #e4e5e6 72%, #f9f9f9 90%);
 }
 .team__section h1 {
     color: var(--secondary-txt-col);
@@ -504,7 +505,14 @@ img.activator.drPB {
     margin-top: -109px;
     margin-left: -18px;
 }
-.team__section_cards .card-image.fem.avatar {
+.team__section_cards .card-image {
+    background-image: url('../img/svg/logo.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 75%;
+}
+/* .team__section_cards .card-image.fem.avatar {
     background-image: url('../img/svg/f_avatar.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -517,7 +525,7 @@ img.activator.drPB {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 25px;
-}
+} */
 .team__section .card .card-content {
     display: flex;
     flex-direction: column;
@@ -1150,6 +1158,7 @@ section.patients__section {
     }
     .about__bg {
         background-color: var(--main-bg-col);
+        background: none;
         /* padding: 66px 0 0 0; */
     }
 

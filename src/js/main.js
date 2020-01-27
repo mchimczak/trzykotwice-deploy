@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var instances = M.Slider.init(slider, {
             interval: 3000,
             duration: 1000,
-            height: 600
+            height: 500
         })
     }
 
