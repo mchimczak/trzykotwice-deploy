@@ -505,27 +505,13 @@ img.activator.drPB {
     margin-top: -109px;
     margin-left: -18px;
 }
-.team__section_cards .card-image {
+.team__section_cards .card-image.fem.avatar, .team__section_cards .card-image.male.avatar {
     background-image: url('../img/svg/logo.svg');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 40%;
     background-position-y: 75%;
 }
-/* .team__section_cards .card-image.fem.avatar {
-    background-image: url('../img/svg/f_avatar.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 25px;
-}
-.team__section_cards .card-image.male.avatar {
-    background-image: url('../img/svg/m_avatar.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 25px;
-} */
 .team__section .card .card-content {
     display: flex;
     flex-direction: column;
