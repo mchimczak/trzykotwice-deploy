@@ -1,10 +1,11 @@
 // import '../img/doctors.png';
-import '../img/oferta_galeria/s1.jpg';
-import '../img/oferta_galeria/s2.jpg';
-import '../img/oferta_galeria/s3.jpg';
-import '../img/oferta_galeria/s4.jpg';
-import '../img/oferta_galeria/s5.jpg';
-import '../img/oferta_galeria/s6.jpg';
+// import '../img/oferta_galeria/s1.jpg';
+// import '../img/oferta_galeria/s2.jpg';
+// import '../img/oferta_galeria/s3.jpg';
+// import '../img/oferta_galeria/s4.jpg';
+// import '../img/oferta_galeria/s5.jpg';
+// import '../img/oferta_galeria/s6.jpg';
+import "../assets/rodo.pdf";
 import '../assets/wizyty.pdf';
 import "../assets/WTO.pdf";
 import "../assets/dokumentacja_medyczna.pdf";
@@ -58,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
+
+//   ON START LOADER ANIMATION 
+
   const heroTitle = document.querySelector('.hero__content p');
   const heroSubtitle = document.querySelector('.hero__content span');
   const heroBtn = document.querySelector('.hero__btn');
@@ -76,6 +80,22 @@ document.addEventListener('DOMContentLoaded', function() {
       loader.style.setProperty('opacity', 0);
       heroTitle.classList.add('show');
   });
+
+
+//   COOKIE FORM 
+
+  const cookieForm = document.querySelector('#cookieForm');
+  const CookieBtn = document.querySelector('#cookie');
+  // localStorage.clear();
+  const checkForCookies = () => {
+    localStorage.getItem('cookieInfo') != null ? cookieForm.setAttribute('style', 'display: none') : ''
+  }
+  checkForCookies();
+  CookieBtn.addEventListener('click', function() {
+      localStorage.setItem('cookieInfo', 'true');
+      checkForCookies();
+  });
+
 
 
 const section_img = document.querySelector('.section__img')
@@ -99,6 +119,7 @@ if (window.innerWidth >= 768 && window.innerWidth <=1200) {
 }
 
 
+// HIDE MENU ON SCROLL 
 
     const navbar = document.querySelector('nav');
     const navlink = document.querySelectorAll('.nav__link');
