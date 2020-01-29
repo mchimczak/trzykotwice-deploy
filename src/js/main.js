@@ -95,8 +95,7 @@ CookieBtn.addEventListener('click', function() {
           document.querySelector('body').classList.remove('disable-scroll'),
           loader.style.setProperty('opacity', 0),
           heroTitle.classList.add('show')
-    )).then(() => setTimeout(() => document.querySelector('nav').classList.add('visible'), 1000))
-        .then(() => setTimeout(() => cookieForm.classList.add('active'), 4000));
+    )).then(() => setTimeout(() => cookieForm.classList.add('active'), 4000));
   });
 
 
