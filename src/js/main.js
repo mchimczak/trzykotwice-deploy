@@ -60,6 +60,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+//   COOKIE FORM 
+
+const cookieForm = document.querySelector('#cookieForm');
+const CookieBtn = document.querySelector('#cookie');
+// localStorage.clear();
+const checkForCookies = () => {
+  localStorage.getItem('cookieInfo') != null ? cookieForm.setAttribute('style', 'display: none') : ''
+}
+checkForCookies();
+CookieBtn.addEventListener('click', function() {
+    localStorage.setItem('cookieInfo', 'true');
+    checkForCookies();
+});
+
+
 //   ON START LOADER ANIMATION 
 
   const heroTitle = document.querySelector('.hero__content p');
@@ -70,30 +85,18 @@ document.addEventListener('DOMContentLoaded', function() {
   
   loader.addEventListener('transitionend', function() {
       this.style.setProperty('display', 'none');
-      borders.forEach( x => x.classList.add('active'));
       heroSubtitle.classList.add('show');
       heroBtn.classList.add('show');
+      borders.forEach( x => x.classList.add('active'));
   });
   
   window.addEventListener('load', () => {
-      document.querySelector('body').classList.remove('disable-scroll');
-      loader.style.setProperty('opacity', 0);
-      heroTitle.classList.add('show');
-  });
-
-
-//   COOKIE FORM 
-
-  const cookieForm = document.querySelector('#cookieForm');
-  const CookieBtn = document.querySelector('#cookie');
-  // localStorage.clear();
-  const checkForCookies = () => {
-    localStorage.getItem('cookieInfo') != null ? cookieForm.setAttribute('style', 'display: none') : ''
-  }
-  checkForCookies();
-  CookieBtn.addEventListener('click', function() {
-      localStorage.setItem('cookieInfo', 'true');
-      checkForCookies();
+    new Promise(resolve => resolve(
+          document.querySelector('body').classList.remove('disable-scroll'),
+          loader.style.setProperty('opacity', 0),
+          heroTitle.classList.add('show'),
+          document.querySelector('nav').classList.add('visible')
+    )).then(() => setTimeout(() => cookieForm.classList.add('active'), 4000));
   });
 
 

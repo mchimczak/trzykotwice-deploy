@@ -98,8 +98,8 @@ section:not(:first-of-type) {
 .loader,
 .loader:after {
   border-radius: 50%;
-  width: 8em;
-  height: 8em;
+  width: 6em;
+  height: 6em;
 }
 .loader {
   margin: 0px auto;
@@ -147,6 +147,10 @@ nav {
     top: 0;
     transition: .5s ease-in-out;
     z-index: 999;
+    opacity: 0;
+}
+nav.visible {
+    opacity: 1;
 }
 .nav-up {
     top: -65px
@@ -246,21 +250,21 @@ nav .brand-logo.left {
     transition: 1s ease-in;
 }
 .hero__content-border.left {
-    left: 50%;
+    left: 0;
 }
 .hero__content-border.right {
-    right: 50%;
+    right: 0;
 }
 .hero__content-border.active {
     opacity: 1;
 }
-.hero__content-border.left.active {
+/* .hero__content-border.left.active {
     left: 0;
 }
 .hero__content-border.right.active {
     left: unset;
     right: 0;
-}
+} */
 .hero__content p {
     font-size: 21px;
     text-transform: uppercase;
@@ -279,7 +283,7 @@ nav .brand-logo.left {
     color: #fbfbfbd1;
     opacity: 0;
     transition: .5s opacity ease-in;
-    transition-delay: .8s;
+    /* transition-delay: .8s; */
 }
 .hero__content span.show {
     opacity: 1;
@@ -295,7 +299,7 @@ nav .brand-logo.left {
     border-radius: 5px;
     opacity: 0;
     transition: .5s opacity ease-in;
-    transition-delay: 1.2s;
+    transition-delay: .5s;
 }
 .hero__btn.btn.show {
     opacity: 1;
@@ -322,12 +326,11 @@ section.contact__section {
     /* width: 80%; */
     text-align: left;
 }
-h4 span {
+.name {
     display: block;
     margin: .5em 0;
-}
-h4 span strong {
     font-weight: 600;
+    font-family: var(--headers-font-family);
 }
 .map {
     width: 100%;
@@ -435,7 +438,7 @@ h4 span strong {
 }
 .about__bg {
     /* background-color: var(--main-darken-bg-col); */
-    padding-top: 3em;
+    /* padding-top: 3em; */
     background: rgb(249,249,249);
 background: linear-gradient(180deg, rgba(249,249,249,1) 34%, rgba(230,230,230,0.3654412448573179) 100%);
     /* padding: 66px 0; */
@@ -793,8 +796,9 @@ section.patients__section {
     align-items: center;
     margin-bottom: 30px;
 }
-.footer__icon a {
-    color: inherit;
+.footer__link {
+    color: hsla(0,0%,96%,.68);
+    margin-left: 10px;
 }
 .footer__pdf_icon {
     background-image: url('../img/svg/pdf.svg');
@@ -837,6 +841,11 @@ section.patients__section {
     grid-template-rows: auto 1fr;
     justify-items: center;
     align-items: center;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.cookieForm.active {
+    opacity: 1;
 }
 .cookieForm > p {
     font-size: 12px;
@@ -880,7 +889,7 @@ section.patients__section {
     h4 {
         font-size: 24px;
     }
-    h4 span strong {
+    .name {
         font-size: 26px;
     }
     h5 {
@@ -1640,7 +1649,7 @@ section.patients__section {
         height: 150px;
         left: -95px;
     }
-    .footer__contact_wrapper p, .footer__icon a {
+    .footer__contact_wrapper p, .footer__link {
         font-size: 16px;
     }
     /* TEAM SECTION  */
