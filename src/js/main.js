@@ -139,7 +139,9 @@ CookieBtn.addEventListener('click', function() {
     )).then(() => setTimeout(() => cookieForm.classList.add('active'), 4000));
   });
 
-
+heroBtn.addEventListener('click', () => {
+    window.location.replace('#o-nas');
+})
 
 const section_img = document.querySelector('.section__img')
 
