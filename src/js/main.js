@@ -1,10 +1,12 @@
-// import '../img/doctors.png';
-// import '../img/oferta_galeria/s1.jpg';
-// import '../img/oferta_galeria/s2.jpg';
-// import '../img/oferta_galeria/s3.jpg';
-// import '../img/oferta_galeria/s4.jpg';
-// import '../img/oferta_galeria/s5.jpg';
-// import '../img/oferta_galeria/s6.jpg';
+import '../img/drASZ.png';
+import '../img/drEG.png';
+import '../img/drPB.png';
+import '../img/oferta_galeria/s1.jpg';
+import '../img/oferta_galeria/s2.jpg';
+import '../img/oferta_galeria/s3.jpg';
+import '../img/oferta_galeria/s4.jpg';
+import '../img/oferta_galeria/s5.jpg';
+import '../img/oferta_galeria/s6.jpg';
 import "../assets/rodo.pdf";
 import '../assets/wizyty.pdf';
 import "../assets/WTO.pdf";
@@ -56,6 +58,45 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var modal = document.querySelectorAll('.modal');
     var instances = M.Modal.init(modal, {});
+
+
+    // LAZY LOAD IMG 
+    const loadImages = (image) => {
+        // console.log('switch');
+        image.src = image.dataset.src
+
+        observer.unobserve(image);
+    };
+    // const loadImages = (image) => {
+    //     console.log('switch');
+    //     const currentSrc = image.src;
+    //     const newSrc = image.dataset.src;
+    //     let splitUrl, srcFile, newUrl;
+
+    //     if (image.classList.contains('sliderImg')) {
+    //         image.src = newSrc
+    //     } else {
+    //         splitUrl = currentSrc.split('/'),
+    //         srcFile = splitUrl[splitUrl.length - 1],
+    //         newUrl = currentSrc.replace(srcFile, newSrc)
+    //         image.src = newUrl
+    //     }
+    //     // newUrl == currentSrc ? '' : image.src = newUrl;
+    //     observer.unobserve(image);
+    // };
+    
+    const handleIntersection = (entries) => {
+        entries.forEach(entry => entry.intersectionRatio > 0 ? loadImages(entry.target) : '');
+    };
+    
+    const observerOptions = {
+        rootMargin: '0px 0px 20% 0px',
+        threshold: 0.1
+    }
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    
+    const images = document.querySelectorAll('img[data-src]');
+    images.forEach(img => observer.observe(img));
 
   });
 
